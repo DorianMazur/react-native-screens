@@ -20,5 +20,6 @@ export type StackHeaderItemProps = {
   icon?: PlatformIconIOS | undefined;
   render?: (() => ReactElement) | undefined;
   menu?: StackHeaderMenuIOS | undefined;
+  disabled?: boolean | undefined;
   onPress?: (() => void) | undefined;
 };
