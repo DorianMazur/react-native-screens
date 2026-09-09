@@ -1,5 +1,6 @@
 import type { ReactElement } from 'react';
 import type { PlatformIconIOS } from '../../../shared/types';
+import type { StackHeaderItemVariantIOS } from '../StackHeaderConfig.ios.types';
 import type { StackHeaderMenuIOS } from './StackHeaderMenu.ios.types';
 import type { StackHeaderItemVisibilityPriorityIOS } from '../StackHeaderConfig.ios.types';
 
@@ -20,7 +21,7 @@ export type StackHeaderItemProps = {
   icon?: PlatformIconIOS | undefined;
   render?: (() => ReactElement) | undefined;
   menu?: StackHeaderMenuIOS | undefined;
-  variant?: 'plain' | 'prominent' | undefined;
+  variant?: StackHeaderItemVariantIOS | undefined;
   disabled?: boolean | undefined;
   onPress?: (() => void) | undefined;
 };
