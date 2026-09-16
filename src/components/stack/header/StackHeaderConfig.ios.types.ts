@@ -511,9 +511,9 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font family used for plain header items.
    *
-   * @description Applies to the text of header items with the `plain` variant,
-   * including the back button title unless overridden with the `backButton*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description Applies to the text of header items with the `plain` variant.
+   * Also applies to the back button title, but only while no `backButton*`
+   * attribute is set.
    *
    * @platform ios
    */
@@ -521,9 +521,9 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font size used for plain header items.
    *
-   * @description Applies to the text of header items with the `plain` variant,
-   * including the back button title unless overridden with the `backButton*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description Applies to the text of header items with the `plain` variant.
+   * Also applies to the back button title, but only while no `backButton*`
+   * attribute is set.
    *
    * @platform ios
    */
@@ -531,9 +531,9 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font weight used for plain header items.
    *
-   * @description Applies to the text of header items with the `plain` variant,
-   * including the back button title unless overridden with the `backButton*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description Applies to the text of header items with the `plain` variant.
+   * Also applies to the back button title, but only while no `backButton*`
+   * attribute is set.
    *
    * @platform ios
    */
@@ -541,9 +541,9 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font style used for plain header items.
    *
-   * @description Applies to the text of header items with the `plain` variant,
-   * including the back button title unless overridden with the `backButton*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description Applies to the text of header items with the `plain` variant.
+   * Also applies to the back button title, but only while no `backButton*`
+   * attribute is set.
    *
    * @platform ios
    */
@@ -551,9 +551,9 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font color used for plain header items.
    *
-   * @description Applies to the text of header items with the `plain` variant,
-   * including the back button title unless overridden with the `backButton*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description Applies to the text of header items with the `plain` variant.
+   * Also applies to the back button title, but only while no `backButton*`
+   * attribute is set.
    *
    * @platform ios
    */
@@ -937,8 +937,11 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font family used for the back button title.
    *
-   * @description Unset back button attributes fall back to the `button*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description The back button title follows the `button*` attributes only
+   * while no `backButton*` attribute is set. Setting any `backButton*`
+   * attribute (in any state) detaches the back button from the `button*`
+   * attributes entirely — the remaining unset attributes then fall back to
+   * the system defaults.
    *
    * @platform ios
    */
@@ -946,8 +949,11 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font size used for the back button title.
    *
-   * @description Unset back button attributes fall back to the `button*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description The back button title follows the `button*` attributes only
+   * while no `backButton*` attribute is set. Setting any `backButton*`
+   * attribute (in any state) detaches the back button from the `button*`
+   * attributes entirely — the remaining unset attributes then fall back to
+   * the system defaults.
    *
    * @platform ios
    */
@@ -955,8 +961,11 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font weight used for the back button title.
    *
-   * @description Unset back button attributes fall back to the `button*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description The back button title follows the `button*` attributes only
+   * while no `backButton*` attribute is set. Setting any `backButton*`
+   * attribute (in any state) detaches the back button from the `button*`
+   * attributes entirely — the remaining unset attributes then fall back to
+   * the system defaults.
    *
    * @platform ios
    */
@@ -964,8 +973,11 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font style used for the back button title.
    *
-   * @description Unset back button attributes fall back to the `button*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description The back button title follows the `button*` attributes only
+   * while no `backButton*` attribute is set. Setting any `backButton*`
+   * attribute (in any state) detaches the back button from the `button*`
+   * attributes entirely — the remaining unset attributes then fall back to
+   * the system defaults.
    *
    * @platform ios
    */
@@ -973,8 +985,11 @@ export interface StackHeaderAppearanceIOS {
   /**
    * @summary Specifies the font color used for the back button title.
    *
-   * @description Unset back button attributes fall back to the `button*`
-   * attributes (on iOS 26+ the back button shows no title by default).
+   * @description The back button title follows the `button*` attributes only
+   * while no `backButton*` attribute is set. Setting any `backButton*`
+   * attribute (in any state) detaches the back button from the `button*`
+   * attributes entirely — the remaining unset attributes then fall back to
+   * the system defaults.
    *
    * @platform ios
    */
